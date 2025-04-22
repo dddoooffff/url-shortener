@@ -7,7 +7,7 @@ class Url(BaseModel):
     clicks: int
     
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class UrlCreate(BaseModel):
     original_url: str
